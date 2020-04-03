@@ -24,8 +24,6 @@ def encrypt(content): #TODO zaszyfrowanie ciagu
 
 class Terminal:
     __terminal_id = str
-    __publish_script_file = "publish.sh"
-    __subscribe_script_file = "subscribe.sh"
     __info_file_name = "info_file.txt"
 
     def __init__(self, terminal_id):
@@ -34,8 +32,8 @@ class Terminal:
     def __communicate_with_server(self, command):
         #TODO potrzebne sprawdzanie czy serwer nie jest zajety
         write_to_info_file(command, self.__info_file_name)
-        call(self.__publish_script_file)
-        call(self.__subscribe_script_file)
+        call('mosquitto_pub -h localhost -t "server/command" -f "info_file.txt"')
+        call('mosquitto_sub -h localhost -t "server/feedback" -C 1 > "info_file.txt"')
         info_file = open(self.__info_file_name, "r")
         print(info_file.read())
         info_file.close()
