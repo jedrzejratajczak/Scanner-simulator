@@ -1,0 +1,10 @@
+WORKER1,Pestka,Blazej,0.,False
+WORKER2,Pietruczuk,Marzena,0.,False
+WORKER3,Mieszkowski,Joanna,0.,False
+WORKER4,Ceglowski,Marian,0.,False
+WORKER5,Ledwon,Edyta,0.,False
+WORKER6,Miszczak,Sylwester,0.,False
+WORKER7,Maroszek,Olga,0.,False
+WORKER8,Tyc,Joanna,0.,False
+WORKER9,Nurzynski,Tomasz,0.,False
+WORKER10,Tyrka,Iwona,0.,False
