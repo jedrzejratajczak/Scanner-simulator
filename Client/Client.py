@@ -32,8 +32,8 @@ class Terminal:
     def __communicate_with_server(self, command):
         #TODO potrzebne sprawdzanie czy serwer nie jest zajety
         write_to_info_file(command, self.__info_file_name)
-        call('mosquitto_pub -h localhost -t "server/command" -f "info_file.txt"')
-        call('mosquitto_sub -h localhost -t "server/feedback" -C 1 > "info_file.txt"')
+        call('mosquitto_pub -h localhost -t "server/command" -f "info_file.txt"', shell=True)
+        call('mosquitto_sub -h localhost -t "server/feedback" -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
         print(info_file.read())
         info_file.close()
