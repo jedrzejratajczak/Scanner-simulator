@@ -103,31 +103,31 @@ if __name__ == "__main__":
         if option_number == 1:
             terminal.shutdown(session[0], session[1])
         if option_number == 2:
-            card_rfid = input("Type card rfid: ") #TODO zmiana z inputa na klawisz
+            card_rfid = raw_input('Type card rfid: ') #TODO zmiana z inputa na klawisz
             terminal.read_card(card_rfid, session[0], session[1])
         if option_number == 3:
-            terminal_id = input("Type terminal id: ")
+            terminal_id = raw_input("Type terminal id: ")
             terminal.add_terminal(terminal_id, session[0], session[1])
         if option_number == 4:
-            worker_id = input("Type worker id: ")
-            surname = input("Type worker surname: ")
-            name = input("Type worker name: ")
+            worker_id = raw_input("Type worker id: ")
+            surname = raw_input("Type worker surname: ")
+            name = raw_input("Type worker name: ")
             terminal.add_worker(worker_id, surname, name, session[0], session[1])
         if option_number == 5:
-            worker_id = input("Type worker id: ")
-            card_rfid = input("Type worker id")
+            worker_id = raw_input("Type worker id: ")
+            card_rfid = raw_input("Type worker id")
             terminal.assign(worker_id, card_rfid, session[0], session[1])
         if option_number == 6:
-            card_rfid = input("Type card rfid: ")
+            card_rfid = raw_input("Type card rfid: ")
             terminal.unassign(card_rfid, session[0], session[1])
         if option_number == 7:
-            card_rfid = input("Type card rfid: ")
+            card_rfid = raw_input("Type card rfid: ")
             terminal.delete_card(card_rfid, session[0], session[1])
         if option_number == 8:
-            terminal_id = input("Type terminal id: ")
+            terminal_id = raw_input("Type terminal id: ")
             terminal.delete_terminal(terminal_id, session[0], session[1])
         if option_number == 9:
-            worker_id = input("Type worker id: ")
+            worker_id = raw_input("Type worker id: ")
             terminal.delete_worker(worker_id, session[0], session[1])
         if option_number == 10:
             terminal.get_workers(session[0], session[1])

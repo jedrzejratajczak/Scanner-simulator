@@ -68,6 +68,7 @@ class Server:
 
     def __command_handler(self, command):
         command_info = command.split(',')
+        command_info[2] = float(command_info[2])
         if command_info[0] == "shutdown":
             return self.__shutdown(command_info[1], command_info[2], command_info[3], command_info[4])
         if command_info[0] == "read_card":
