@@ -1,1 +1,34 @@
 unauthorised,TER1,3/4/2020 16:1:26
+unauthorised,TER1,3/4/2020 16:42:54
+unauthorised,TER1,3/4/2020 16:45:43
+unauthorised,TER1,3/4/2020 16:47:20
+unauthorised,TER1,3/4/2020 16:47:34
+unauthorised,TER1,3/4/2020 16:48:30
+unauthorised,TER1,3/4/2020 16:53:15
+unauthorised,TER1,3/4/2020 16:55:48
+unauthorised,TER1,3/4/2020 16:57:6
+unauthorised,TER1,3/4/2020 17:0:26
+unauthorised,TER1,3/4/2020 17:0:42
+unauthorised,TER1,3/4/2020 17:33:18
+unauthorised,TER1,3/4/2020 17:34:31
+unauthorised,TER1,3/4/2020 17:36:11
+unauthorised,TER1,3/4/2020 17:38:56
+add_card,TER1,3/4/2020 17:41:24,CARD2
+
+add_card,TER1,3/4/2020 22:0:0,CARD2
+
+add_card,TER1,3/4/2020 22:0:15,CARD6
+
+get_cards,TER1,3/4/2020 22:0:33
+get_cards,TER1,3/4/2020 22:2:19
+shutdown,TER1,3/4/2020 22:26:53
+shutdown,TER1,3/4/2020 22:27:6
+shutdown,TER1,3/4/2020 22:27:8
+get_cards,TER1,3/4/2020 22:27:13
+shutdown,TER1,3/4/2020 22:39:34
+shutdown,TER1,3/4/2020 22:39:39
+shutdown,TER1,3/4/2020 22:39:40
+shutdown,TER1,3/4/2020 22:41:9
+shutdown,TER1,3/4/2020 22:47:3
+shutdown,TER1,3/4/2020 22:52:10
+shutdown,TER1,3/4/2020 23:1:34

@@ -63,7 +63,10 @@ class Server:
     def communicate_with_client(self):
         call('mosquitto_sub -h localhost -t "server/command" -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
-        write_to_file(self.__command_handler(info_file.read()), self.__info_file_name)
+        command = info_file.read()
+        info_file.close()
+        write_to_file(self.__command_handler(command), self.__info_file_name)
+	time.sleep(0.1)
         call('mosquitto_pub -h localhost -t "server/feedback" -f "info_file.txt"', shell=True)
 
     def __command_handler(self, command):
@@ -124,7 +127,7 @@ class Server:
             return "Unauthorised terminal"
         if not self.__check_session(login, password):
             return "Unauthorised session"
-        __shutdown_flag = True
+        self.shutdown_flag = True
         self.__write_log("shutdown", terminal_id, use_time)
         return "Server will shutdown"
 
@@ -304,18 +307,18 @@ class Server:
     def save_state(self):
         file = open("workers.txt", "w")
         for worker in self.__workers:
-            file.write(worker.worker_id + ',' + worker.surname + ',' + worker.name + " " + worker.enter_time + " " + worker.is_working + '\n')
+            file.write(worker.worker_id + ',' + worker.surname + ',' + worker.name + " " + str(worker.enter_time) + " " + str(worker.is_working) + '\n')
         file.close()
-        file = open("work_times_save.txt", "w")
+        file = open("work_times.txt", "w")
         work_times = self.__workers_work_time.items()
         for work_time in work_times:
             file.write(str(work_time[0]) + ',' + str(work_time[1]) + '\n')
         file.close()
-        file = open("card_readers_save.txt", "w")
-        for card_reader in self.__terminals:
-            file.write(str(card_reader.card_reader_id + '\n'))
+        file = open("terminals.txt", "w")
+        for terminal_id in self.__terminals:
+            file.write(str(terminal_id + '\n'))
         file.close()
-        file = open("cards_save.txt", "w")
+        file = open("cards.txt", "w")
         for card in self.__cards:
             file.write(card.rfid + ',' + card.worker_id + '\n')
         file.close()
