@@ -58,15 +58,13 @@ class Server:
     __workers = []
     __cards = []
     __logs = open("logs.txt", "a+")
-    __publish_script_file = "publish.sh"
-    __subscribe_script_file = "subscribe.sh"
     __info_file_name = "info_file.txt"
 
     def communicate_with_client(self):
-        call(self.__subscribe_script_file)
+        call('mosquitto_sub -h localhost -t "server/command" -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
         write_to_file(self.__command_handler(info_file.read()), self.__info_file_name)
-        call(self.__publish_script_file)
+        call('mosquitto_pub -h localhost -t "server/feedback" -f "info_file.txt"', shell=True)
 
     def __command_handler(self, command):
         command_info = command.split(',')
