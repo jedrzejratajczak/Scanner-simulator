@@ -142,6 +142,7 @@ class Server:
             self.__write_log("add_card", terminal_id, use_time, [card_rfid])
             return "Card added successfully"
         worker = self.__get_worker(card.worker_id)
+        print(worker.is_working)
         if worker is None:
             self.__write_log("read_card_fail", terminal_id, use_time, [card_rfid])
             return "No worker assigned to the card"
