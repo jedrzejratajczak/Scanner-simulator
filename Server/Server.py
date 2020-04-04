@@ -63,7 +63,7 @@ class Server:
     def communicate_with_client(self):
         call('mosquitto_sub -h localhost -t "server/command" -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
-        command = info_file.read()
+        command = info_file.readline()
         info_file.close()
         write_to_file(self.__command_handler(command), self.__info_file_name)
         time.sleep(0.1)
@@ -132,7 +132,6 @@ class Server:
         return "Server will shutdown"
 
     def __read_card(self, terminal_id, use_time, login, password, card_rfid):
-        print(card_rfid)
         if not self.__check_authorization(terminal_id, use_time):
             return "Unauthorised terminal"
         card = self.__get_card(card_rfid)
