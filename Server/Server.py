@@ -61,7 +61,7 @@ class Server:
     __info_file_name = "info_file.txt"
 
     def communicate_with_client(self):
-        call('mosquitto_sub -h localhost -t "server/command" -C 1 > "info_file.txt"', shell=True)
+        call('mosquitto_sub -h localhost -t "server/command" -N -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
         command = info_file.read()
         info_file.close()
