@@ -63,9 +63,8 @@ class Server:
     def communicate_with_client(self):
         call('mosquitto_sub -h localhost -t "server/command" -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
-        command = info_file.readline()
-        print(command)
-        print("xxxxxx")
+        command = info_file.read()
+        time.sleep(1111111)
         info_file.close()
         write_to_file(self.__command_handler(command), self.__info_file_name)
         time.sleep(0.1)
