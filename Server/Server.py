@@ -70,7 +70,6 @@ class Server:
         call('mosquitto_pub -h localhost -t "server/feedback" -f "info_file.txt"', shell=True)
 
     def __command_handler(self, command):
-        print(command)
         command_info = command.split(',')
         command_info[2] = float(command_info[2])
         if command_info[0] == "shutdown":

@@ -17,6 +17,7 @@ def secs_to_hours(secs):
 def write_to_info_file(content, file_name):
     info_file = open(file_name, "w")
     info_file.write(content)
+    info_file.tell()
     info_file.close()
 
 def encrypt(content): #TODO zaszyfrowanie ciagu
@@ -30,7 +31,6 @@ class Terminal:
         self.__terminal_id = terminal_id
 
     def __communicate_with_server(self, command):
-        print(command)
         #TODO potrzebne sprawdzanie czy serwer nie jest zajety
         write_to_info_file(command, self.__info_file_name)
         call('mosquitto_pub -h localhost -t "server/command" -f "info_file.txt"', shell=True)
