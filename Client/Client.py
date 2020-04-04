@@ -17,7 +17,7 @@ def secs_to_hours(secs):
 def write_to_info_file(content, file_name):
     info_file = open(file_name, "w")
     info_file.write(content)
-    info_file.tell()
+    print(info_file.tell())
     info_file.close()
 
 def encrypt(content): #TODO zaszyfrowanie ciagu
