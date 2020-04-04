@@ -70,6 +70,7 @@ class Server:
         call('mosquitto_pub -h localhost -t "server/feedback" -f "info_file.txt"', shell=True)
 
     def __command_handler(self, command):
+        command.rstrip()
         command_info = command.split(',')
         command_info[2] = float(command_info[2])
         if command_info[0] == "shutdown":
@@ -132,6 +133,7 @@ class Server:
         return "Server will shutdown"
 
     def __read_card(self, terminal_id, use_time, login, password, card_rfid):
+        print(card_rfid)
         if not self.__check_authorization(terminal_id, use_time):
             return "Unauthorised terminal"
         card = self.__get_card(card_rfid)
