@@ -66,7 +66,7 @@ class Server:
         command = info_file.read()
         info_file.close()
         write_to_file(self.__command_handler(command), self.__info_file_name)
-	time.sleep(0.1)
+        time.sleep(0.1)
         call('mosquitto_pub -h localhost -t "server/feedback" -f "info_file.txt"', shell=True)
 
     def __command_handler(self, command):
@@ -307,7 +307,7 @@ class Server:
     def save_state(self):
         file = open("workers.txt", "w")
         for worker in self.__workers:
-            file.write(worker.worker_id + ',' + worker.surname + ',' + worker.name + " " + str(worker.enter_time) + " " + str(worker.is_working) + '\n')
+            file.write(worker.worker_id + ',' + worker.surname + ',' + worker.name + ',' + str(worker.enter_time) + ',' + str(worker.is_working) + '\n')
         file.close()
         file = open("work_times.txt", "w")
         work_times = self.__workers_work_time.items()
