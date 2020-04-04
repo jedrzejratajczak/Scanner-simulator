@@ -142,7 +142,6 @@ class Server:
             self.__write_log("add_card", terminal_id, use_time, [card_rfid])
             return "Card added successfully"
         worker = self.__get_worker(card.worker_id)
-        print(worker.is_working)
         if worker is None:
             self.__write_log("read_card_fail", terminal_id, use_time, [card_rfid])
             return "No worker assigned to the card"
@@ -329,7 +328,11 @@ class Server:
         workers_content = file.read().splitlines()
         for worker in workers_content:
             worker_info = worker.split(',')
-            self.__workers.append(Worker(worker_info[0], worker_info[1], worker_info[2], float(worker_info[3]), bool(worker_info[4])))
+            if worker_info[4] == "False":
+                worker_is_working = False
+            else:
+                worker_is_working = True
+            self.__workers.append(Worker(worker_info[0], worker_info[1], worker_info[2], float(worker_info[3]), worker_is_working))
         file.close()
 
         file = open("terminals.txt", "r")
