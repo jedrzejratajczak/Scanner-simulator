@@ -30,6 +30,7 @@ class Terminal:
         self.__terminal_id = terminal_id
 
     def __communicate_with_server(self, command):
+        print(command)
         #TODO potrzebne sprawdzanie czy serwer nie jest zajety
         write_to_info_file(command, self.__info_file_name)
         call('mosquitto_pub -h localhost -t "server/command" -f "info_file.txt"', shell=True)
@@ -104,7 +105,6 @@ if __name__ == "__main__":
             terminal.shutdown(session[0], session[1])
         if option_number == 2:
             card_rfid = raw_input('Type card rfid: ') #TODO zmiana z inputa na klawisz
-            print(card_rfid)
             terminal.read_card(card_rfid, session[0], session[1])
         if option_number == 3:
             terminal_id = raw_input("Type terminal id: ")
