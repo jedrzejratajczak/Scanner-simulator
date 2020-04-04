@@ -73,6 +73,7 @@ class Server:
         command_info = command.split(',')
         for i_command in command_info:
             i_command.rstrip()
+        print(command_info)
         command_info[2] = float(command_info[2])
         if command_info[0] == "shutdown":
             return self.__shutdown(command_info[1], command_info[2], command_info[3], command_info[4])
