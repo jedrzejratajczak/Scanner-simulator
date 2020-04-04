@@ -333,6 +333,7 @@ class Server:
             else:
                 worker_is_working = True
             self.__workers.append(Worker(worker_info[0], worker_info[1], worker_info[2], float(worker_info[3]), worker_is_working))
+            self.__workers_work_time[worker_info[0]] = 0
         file.close()
 
         file = open("terminals.txt", "r")
