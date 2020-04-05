@@ -1,1 +1,8 @@
 .idea/
+Client/info_file.txt
+Server/info_file.txt
+Server/logs.txt
+Server/cards.txt
+Server/terminals.txt
+Server/work_times.txt
+Server/workers.txt
