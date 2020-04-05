@@ -350,7 +350,7 @@ class Server:
         file = open("work_times.txt", "r")
         for work_time in file.read().splitlines():
             work_time_info = work_time.split(',')
-            self.__workers_work_time[work_time_info[0]] = work_time_info[1]
+            self.__workers_work_time[work_time_info[0]] = float(work_time_info[1])
         file.close()
 
 if __name__ == "__main__":
