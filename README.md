@@ -19,7 +19,7 @@ You will be notified with available commands after the program's execution. Defa
 10 new workers without work time and they are assigned to 10 cards.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/example.png)
 
 ## Technologies
 * Python 3
