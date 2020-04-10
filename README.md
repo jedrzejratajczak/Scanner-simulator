@@ -46,6 +46,7 @@ List of features ready:
 * Assign or unassign card and reader
 * Shutdown server remotely
 * Shutdown terminal
+* Writing and reading server backup on start and shutdown of server
 
 To-do list:
 * Signing in session of terminal
