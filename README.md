@@ -54,6 +54,8 @@ To-do list:
 * Encryption and decryption of session information
 * Permission to administrative functions for authenticated sessions
 * User can change ip on which mqtt works
+* Switch from CUI to GUI (Tkinter)
+* Switch from data in files to database (SQLite)
 
 ## Contact
 Created by **Jędrzej Ratajczak** ([@mrozelek](https://github.com/Mrozelek)) - feel free to contact me!
