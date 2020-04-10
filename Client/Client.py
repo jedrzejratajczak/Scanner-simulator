@@ -115,7 +115,7 @@ if __name__ == "__main__":
             terminal.add_worker(worker_id, surname, name, session[0], session[1])
         if option_number == 5:
             worker_id = raw_input("Type worker id: ")
-            card_rfid = raw_input("Type worker id")
+            card_rfid = raw_input("Type card rfid: ")
             terminal.assign(worker_id, card_rfid, session[0], session[1])
         if option_number == 6:
             card_rfid = raw_input("Type card rfid: ")
