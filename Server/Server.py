@@ -257,7 +257,6 @@ class Server:
         for worker in self.__workers:
             result += worker.worker_id + ',' + worker.surname + ',' + worker.name + '\n'
         self.__write_log("get_workers", terminal_id, use_time)
-        print(result)
         return result
 
     def __get_cards(self, terminal_id, use_time, login, password):

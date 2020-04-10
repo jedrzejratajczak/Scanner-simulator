@@ -35,7 +35,7 @@ class Terminal:
         call('mosquitto_pub -h localhost -t "server/command" -f "info_file.txt"', shell=True)
         call('mosquitto_sub -h localhost -t "server/feedback" -N -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
-        print(info_file.readline())
+        print(info_file.readlines())
         info_file.close()
 
     def __make_command(self, command, login, password, args=None):
