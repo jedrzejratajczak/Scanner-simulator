@@ -94,7 +94,7 @@ def sign_in(): #TODO logowanie do sesji
 if __name__ == "__main__":
     session = ("", "")
     shutdown_flag = False
-    terminal = Terminal("TER1")
+    terminal = Terminal(raw_input('Type terminal id: '))
     while not shutdown_flag:
         print("Available commands:"
               "\n0 - Close terminal"
