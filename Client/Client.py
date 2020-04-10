@@ -22,9 +22,6 @@ def write_to_info_file(content, file_name):
 def encrypt(content): #TODO zaszyfrowanie ciagu
     return content
 
-def print_file(content):
-    pass
-
 class Terminal:
     __terminal_id = str
     __info_file_name = "info_file.txt"
