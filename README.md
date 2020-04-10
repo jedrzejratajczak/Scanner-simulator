@@ -7,11 +7,12 @@ In the 'screens with usage' folder you can check how the program works.
 
 # How to use
 Program works on linux based systems (checked for Debian distro). Server and client has to be used on the same system as far.
-To execute client and server you will need to download python and mosquitto packages. Then enable mosquitto process.
 
-To start server you can use _python Server.py_ command in _Server/_ directory.
+**To execute** client and server you will need to download *python* and *mosquitto* packages. Then enable mosquitto process.
 
-To start client (terminal) you can use _python Client.py_ command in _Client/_ directory.
+**To start server** you can use *python Server.py* command in *Server/* directory.
+
+**To start client** (terminal) you can use *python Client.py* command in *Client/* directory.
 
 You will be notified with available commands after the program's execution. Defaultly there are 3 terminals,
 10 new workers without work time and they are assigned to 10 cards.
