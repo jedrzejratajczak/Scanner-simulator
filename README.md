@@ -31,12 +31,12 @@ To start server you can use *python Server.py* command in *Server/* directory.
 To start client (terminal) you can use *python Client.py* command in *Client/* directory.
 
 ## Code examples
-< `2`  
-< `CARD2`  
-\> **Card read successfully**  
-< `2`  
-< `CARD2`  
-\> **Your work time: 0:0.57**
+`2`  
+`CARD2`  
+**Card read successfully**  
+`2`  
+`CARD2`  
+**Your work time: 0:0.57**
 
 ## Features
 
