@@ -60,7 +60,7 @@ To-do list:
 
 ## Changelog
 - v. 2 - Split project from one console where client and server was to use MQTT in several consoles (server and multiple terminals).  
-Client's methods and anything about backups hasn't been changed.  
+Client's methods and method of doing backups hasn't been changed.  
 Terminal's class has been deleted from server's database and moved as another solution.  
 Moved project from windows to linux and fixed some compability issues.
 - v. 1 - Initial project
