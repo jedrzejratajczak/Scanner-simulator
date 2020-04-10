@@ -27,4 +27,4 @@ You will be notified with available commands after the program's execution. Defa
 # Features
 
 # Contact
-Created by **Jędrzej Ratajczak**, [@mrozelek](https://github.com/Mrozelek) - feel free to contact me!
+Created by **Jędrzej Ratajczak** ([@mrozelek](https://github.com/Mrozelek)) - feel free to contact me!
