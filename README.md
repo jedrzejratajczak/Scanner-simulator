@@ -59,7 +59,7 @@ To-do list:
 * Switch from data in files to database (SQLite)
 
 ## Changelog
-- Split project from one console where client and server was to use MQTT in several consoles (Server and multiple terminals).  
+- Split project from one console where client and server was to use MQTT in several consoles (server and multiple terminals).  
 Client's methods hasn't been changed.  
 Terminal's class has been deleted from server's database and moved as another solution.
 
