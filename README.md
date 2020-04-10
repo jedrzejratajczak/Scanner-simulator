@@ -39,6 +39,18 @@ To start client (terminal) you can use *python Client.py* command in *Client/* d
 \> Your work time: 0:0.57
 
 ## Features
+List of features ready:
+* Read card (includes adding new card, changing worker state and printing worker's time)
+* Delete or add terminal, card or worker
+* Print list of terminals, cards or workers
+* Assign or unassign card and reader
+* Shutdown server remotely
+* Shutdown terminal
+
+To-do list:
+* Signing in session of terminal
+* Encryption and decryption of session information
+* Permission to administrative functions for authenticated sessions
 
 ## Contact
 Created by **Jędrzej Ratajczak** ([@mrozelek](https://github.com/Mrozelek)) - feel free to contact me!
