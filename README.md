@@ -14,14 +14,12 @@ Program has been written in python and bash for Internet of Things course at Wro
 * [Contact](#contact)
 
 ## General info
-Program works on linux based systems (checked for Debian distro). Server and client has to be used on the same system as far.
-
-
-
+Program works on linux based systems (checked for Debian distro). Server and client has to be used on the same system as far.  
 You will be notified with available commands after the program's execution. Defaultly there are 3 terminals,
 10 new workers without work time and they are assigned to 10 cards.
 
 ## Screenshots
+![Example screenshot](./img/screenshot.png)
 
 ## Technologies
 * Python 3
@@ -33,11 +31,11 @@ To start server you can use *python Server.py* command in *Server/* directory.
 To start client (terminal) you can use *python Client.py* command in *Client/* directory.
 
 ## Code examples
-< 2  
-< CARD2  
+< `2`  
+< `CARD2`  
 \> **Card read successfully**  
-< 2  
-< CARD2  
+< `2`  
+< `CARD2`  
 \> **Your work time: 0:0.57**
 
 ## Features
