@@ -22,6 +22,9 @@ def write_to_info_file(content, file_name):
 def encrypt(content): #TODO zaszyfrowanie ciagu
     return content
 
+def print_file(content):
+    pass
+
 class Terminal:
     __terminal_id = str
     __info_file_name = "info_file.txt"
@@ -35,7 +38,7 @@ class Terminal:
         call('mosquitto_pub -h localhost -t "server/command" -f "info_file.txt"', shell=True)
         call('mosquitto_sub -h localhost -t "server/feedback" -N -C 1 > "info_file.txt"', shell=True)
         info_file = open(self.__info_file_name, "r")
-        print(info_file.readlines())
+        print(info_file.read())
         info_file.close()
 
     def __make_command(self, command, login, password, args=None):
