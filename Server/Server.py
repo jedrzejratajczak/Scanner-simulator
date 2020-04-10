@@ -180,7 +180,7 @@ class Server:
         self.__write_log("add_worker", terminal_id, use_time, [worker_id, surname, name])
         return "Worker added successfully"
 
-    def __assign(self, terminal_id, use_time, login, password, card_rfid, worker_id):
+    def __assign(self, terminal_id, use_time, login, password, worker_id, card_rfid):
         if not self.__check_authorization(terminal_id, use_time):
             return "Unauthorised terminal"
         if not self.__check_session(login, password):
