@@ -9,6 +9,7 @@ Program has been written in python and bash for Internet of Things course at Wro
 * [Setup](#setup)
 * [Code Examples](#code-examples)
 * [Features](#features)
+* [Changelog](#changelog)
 * [Contact](#contact)
 
 ## General info
@@ -56,6 +57,11 @@ To-do list:
 * User can change ip on which mqtt works
 * Switch from CUI to GUI (Tkinter)
 * Switch from data in files to database (SQLite)
+
+## Changelog
+- Split project from one console where client and server was to use MQTT in several consoles (Server and multiple terminals).  
+Client's methods hasn't been changed.  
+Terminal's class has been deleted from server's database and moved as another solution.
 
 ## Contact
 Created by **Jędrzej Ratajczak** ([@mrozelek](https://github.com/Mrozelek)) - feel free to contact me!
