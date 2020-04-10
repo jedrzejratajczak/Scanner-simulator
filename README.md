@@ -18,7 +18,8 @@ You will be notified with available commands after the program's execution. Defa
 Program's main role is to count a work time of every worker who have to use the rfid card on enter and exit.
 
 ## Screenshots
-![Example screenshot](./img/example.png)
+![Example screenshot](./img/work_example.png)
+![Example screenshot](./img/files_example.png)
 
 ## Technologies
 * Python 3
