@@ -118,7 +118,7 @@ if __name__ == "__main__":
         if option_number == 1:
             terminal.shutdown(session[0], session[1])
         if option_number == 2:
-            card_rfid = raw_input('Type card rfid: ') #TODO zmiana z inputa na klawisz
+            card_rfid = raw_input('Type card rfid: ')
             terminal.read_card(card_rfid, session[0], session[1])
         if option_number == 3:
             terminal_id = raw_input("Type terminal id: ")
