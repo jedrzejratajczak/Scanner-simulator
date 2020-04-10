@@ -33,10 +33,10 @@ To start client (terminal) you can use *python Client.py* command in *Client/* d
 ## Code examples
 `2`  
 `CARD2`  
-**Card read successfully**  
+Card read successfully  
 `2`  
 `CARD2`  
-**Your work time: 0:0.57**
+Your work time: 0:0.57
 
 ## Features
 
