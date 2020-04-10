@@ -15,7 +15,7 @@ Program has been written in python and bash for Internet of Things course at Wro
 ## General info
 Program works on linux based systems (checked for Debian distro). Server and client has to be used on the same system as far.  
 You will be notified with available commands after the program's execution. Defaultly there are 3 terminals (TER1, TER2, TER3),
-10 new workers without work time and they are assigned to 10 cards.  
+10 new workers without work time and they are assigned to 10 cards. Notice that you need to use one of default terminals firstly.  
 Program's main role is to count a work time of every worker who have to use the rfid card on enter and exit.
 
 ## Screenshots
