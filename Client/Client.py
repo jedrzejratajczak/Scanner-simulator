@@ -96,6 +96,21 @@ if __name__ == "__main__":
     shutdown_flag = False
     terminal = Terminal("TER1")
     while not shutdown_flag:
+        print("Available commands:"
+              "\n0 - Close terminal"
+              "\n1 - Shutdown server"
+              "\n2 - Read card"
+              "\n3 - Add terminal"
+              "\n4 - Add worker"
+              "\n5 - Assign card to worker"
+              "\n6 - Unassign card"
+              "\n7 - Delete card"
+              "\n8 - Delete terminal"
+              "\n9 - Delete worker"
+              "\n10 - Get workers"
+              "\n11 - Get cards"
+              "\n12 - Get terminals"
+              "\n13 - Sign in session (not implemented yet)")
         option_number = input("Choose an option number: ")
         if option_number == 0:
             shutdown_flag = True
