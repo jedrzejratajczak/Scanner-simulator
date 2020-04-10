@@ -46,6 +46,7 @@ List of features ready:
 * Shutdown server remotely
 * Shutdown terminal
 * Writing and reading server backup on start and shutdown, based on *.txt files
+* Writing all of activities done on server to *logs.txt* file
 
 To-do list:
 * Signing in session of terminal
