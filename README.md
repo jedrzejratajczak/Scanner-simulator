@@ -2,8 +2,6 @@
 A simple console simulation of raspberry pi's RFID cards scanner with MQTT data transfer feature.  
 Program has been written in python and bash for Internet of Things course at Wroclaw University of Science and Technology.
 
-**Author: Jędrzej Ratajczak**
-
 ## Table of content
 * [General info](#general-info)
 * [Screenshots](#screenshots)
