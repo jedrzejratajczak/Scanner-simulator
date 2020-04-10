@@ -181,7 +181,6 @@ class Server:
         return "Worker added successfully"
 
     def __assign(self, terminal_id, use_time, login, password, card_rfid, worker_id):
-        print(card_rfid, "\n", worker_id)
         if not self.__check_authorization(terminal_id, use_time):
             return "Unauthorised terminal"
         if not self.__check_session(login, password):
@@ -294,6 +293,7 @@ class Server:
         return None
 
     def __get_card(self, card_rfid):
+        print(card_rfid)
         for card in self.__cards:
             if card.rfid == card_rfid:
                 return card
