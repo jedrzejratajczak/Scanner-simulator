@@ -51,6 +51,7 @@ To-do list:
 * Signing in session of terminal
 * Encryption and decryption of session information
 * Permission to administrative functions for authenticated sessions
+* User can change ip on which mqtt works
 
 ## Contact
 Created by **Jędrzej Ratajczak** ([@mrozelek](https://github.com/Mrozelek)) - feel free to contact me!
