@@ -47,7 +47,7 @@ List of features ready:
 * Assign or unassign card and reader
 * Shutdown server remotely
 * Shutdown terminal
-* Writing and reading server backup on start and shutdown, based on *.txt files
+* Writing and reading server backup on startup and shutdown, based on *.txt files
 * Writing all of activities done on server to *logs.txt* file
 
 To-do list:
