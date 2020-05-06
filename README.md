@@ -13,10 +13,11 @@ Program has been written in python and bash for Internet of Things course at Wro
 * [Contact](#contact)
 
 ## General info
-Program works on linux based systems (checked for Debian distro). Server and client has to be used on the same system as far.  
-You will be notified with available commands after the program's execution. Defaultly there are 3 terminals (TER1, TER2, TER3),
-10 new workers without work time and they are assigned to 10 cards. Notice that you need to use one of default terminals firstly.  
-Program's main role is to count a work time of every worker who have to use the rfid card on enter and exit.
+Program tested on windows 10 system. 
+You can be notified with available commands after typing 'help' command in console. Defaultly there are 3 terminals (TER1, TER2, TER3),
+10 new workers without work time and they are assigned to 10 cards. Also you are assigned to the TER2.  
+You can change your terminal, login and password in "Constant.py" file in ServerPckg and ClientPckg folders.  
+Program's main role is to count a work time of every worker who have used the rfid card to enter and exit.
 
 ## Screenshots
 ![Example screenshot](./img/work_example.PNG)
@@ -27,9 +28,7 @@ Program's main role is to count a work time of every worker who have to use the 
 * Mosquitto
 
 ## Setup
-To execute client and server you will need to download *python* and *mosquitto* packages. Then enable mosquitto process.  
-To start server you can use *python Server.py* command in *Server/* directory.  
-To start client (terminal) you can use *python Client.py* command in *Client/* directory.
+TODO
 
 ## Code examples
 `2`  
@@ -54,6 +53,8 @@ To-do list:
 * Switch from data in files to database (SQLite)
 
 ## Changelog
+- v. 3 - Code refactor. Database separated from Server. Separated constants, common functions and main.  
+Client and Server now need cert files to connect to broker. Client and Server have to use login and password.
 - v. 2 - Split project from one console where client and server was to use MQTT in several consoles (server and multiple terminals).  
 Client's methods and method of doing backups hasn't been changed.  
 Terminal's class has been deleted from server's database and moved as another solution.  
