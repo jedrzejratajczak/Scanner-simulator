@@ -51,11 +51,6 @@ List of features ready:
 * Writing all of activities done on server to *logs.txt* file
 
 To-do list:
-* Signing in session of terminal
-* Encryption and decryption of session information
-* Permission to administrative functions for authenticated sessions
-* User can change ip on which mqtt works
-* Switch from CUI to GUI (Tkinter)
 * Switch from data in files to database (SQLite)
 
 ## Changelog
