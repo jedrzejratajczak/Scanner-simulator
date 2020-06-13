@@ -28,14 +28,15 @@ Program's main role is to count a work time of every worker who have used the rf
 * Mosquitto MQTT Broker
 
 ## Setup
-1. Download [Mosquitto](https://mosquitto.org/download/) broker to your PC.  
+1. Download [Mosquitto](https://mosquitto.org/download/) broker to your PC.
+
 2. Generate authentication keys. To do so proceed to cmd, change directory to the one where you would like to have keys and use following commands (you don't need to type in anything more beside of pass phrases, just skip the rest with *enter* key):
-- openssl genrsa -des3 -out ca.key 2048
-- openssl req -new -x509 -days 1826 -key ca.key -out ca.crt
-- openssl genrsa -out server.key 2048
-For the next one, you will need to type in your *hostname* in *Common Name*.
-- openssl req -new -out server.csr -key server.key
-- openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 360
+   * openssl genrsa -des3 -out ca.key 2048
+   * openssl req -new -x509 -days 1826 -key ca.key -out ca.crt
+   * openssl genrsa -out server.key 2048
+   * openssl req -new -out server.csr -key server.key (for this you will need to type in your *hostname* in *Common Name*)
+   * openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 360
+
 3. In mosquitto broker directory create new directory named *certs* and copy there generated *ca.crt*, *server.crt* and *server.key* files.
 
 ## Code examples
