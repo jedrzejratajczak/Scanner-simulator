@@ -41,11 +41,13 @@ Program's main role is to count a work time of every worker who have used the rf
 
 4. Download project's *ClientPckg* and *ServerPckg* directories and copy generated *ca.crt* file into both directories.
 
-5. Add client and server users and passwords:
+5. Add client and server users and passwords using cmd (you may need to change path):
    * mosquitto_passwd -c "c:\Program Files\mosquitto\passwd.conf" server
    * mosquitto_passwd -b "c:\Program Files\mosquitto\passwd.conf" client
 
-6. Download project's *mosquitto.conf* file and place/replace it in your mosquitto broker directory.
+6. Download project's *aclfile.conf* and *mosquitto.conf* files and place/replace them into your mosquitto broker directory (you may need to change path in the *mosquitto.conf* file).
+
+7. Start/Restart the *Mosquitto Broker* service (you can do so in *services.msc* app in Windows).
 
 ## Code examples
 `2`  
