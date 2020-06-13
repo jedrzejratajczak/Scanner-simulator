@@ -1,4 +1,4 @@
-# Raspberry RFID Scanner Simulator with MQTT data transfer
+# RFID Scanner Simulator with MQTT data transfer
 A simple console simulation of raspberry pi's RFID cards scanner with MQTT data transfer feature.  
 Program has been written in python and bash for Internet of Things course at Wroclaw University of Science and Technology.
 
@@ -25,10 +25,10 @@ Program's main role is to count a work time of every worker who have used the rf
 
 ## Technologies
 * Python 3
-* Mosquitto
+* Mosquitto MQTT Broker
 
 ## Setup
-TODO
+[Download Mosquitto](https://mosquitto.org/download/)
 
 ## Code examples
 `2`  
