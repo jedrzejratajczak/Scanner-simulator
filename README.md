@@ -7,7 +7,6 @@ Program has been written in Python 3 and batch for Internet of Things course at 
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Code Examples](#code-examples)
 * [Features](#features)
 * [Changelog](#changelog)
 * [Contact](#contact)
@@ -52,14 +51,6 @@ Program's main role is to count a work time of every worker who have used the rf
 
 8. Download project's *Program* directory.
 
-## Code examples
-`2`  
-`CARD2`  
-\> Card read successfully  
-`2`  
-`CARD2`  
-\> Your work time: 0:0.57
-
 ## Features
 List of features ready:
 * Read card (includes adding new card, changing worker state and printing worker's time)
@@ -72,15 +63,13 @@ List of features ready:
 * Writing all of activities done on server to *logs.txt* file
 
 To-do list:
-* Switch from data in files to database (SQLite)
+* Move text files to SQLite database
 
 ## Changelog
+- v. 4 - Moved back to Windows. Created *.bat* launchers. Added default *.conf* files. Fixed error when there are no data text files.
 - v. 3 - Code refactor. Database separated from Server. Separated constants, common functions and main.  
 Client and Server now need cert files to connect to broker. Client and Server have to use login and password.
-- v. 2 - Split project from one console where client and server was to use MQTT in several consoles (server and multiple terminals).  
-Client's methods and method of doing backups hasn't been changed.  
-Terminal's class has been deleted from server's database and moved as another solution.  
-Moved project from windows to linux and fixed some compability issues.
+- v. 2 - Split project from one console, where client and server was, to use MQTT in several consoles (server and multiple terminals). Client's methods and method of doing backups hasn't been changed. Terminal's class has been deleted from server's database and moved as another solution. Moved project from Windows to Linux and fixed some compability issues.
 - v. 1 - Initial project
 
 ## Contact
