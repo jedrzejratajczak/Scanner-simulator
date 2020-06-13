@@ -1,6 +1,6 @@
 # RFID Scanner Simulator with MQTT data transfer
-A simple console simulation of raspberry pi's RFID cards scanner with MQTT data transfer feature.  
-Program has been written in python and bash for Internet of Things course at Wroclaw University of Science and Technology.
+A simple console simulation of RFID cards scanner with MQTT data transfer feature.  
+Program has been written in Python 3 and batch for Internet of Things course at Wroclaw University of Science and Technology.
 
 ## Table of content
 * [General info](#general-info)
@@ -13,7 +13,8 @@ Program has been written in python and bash for Internet of Things course at Wro
 * [Contact](#contact)
 
 ## General info
-Program tested on windows 10 system. 
+The program works in Windows environment. 
+To use the program by simply double clicking *RunServer.bat* and *RunTerminal.bat*
 You can be notified with available commands after typing 'help' command in console. Defaultly there are 3 terminals (TER1, TER2, TER3),
 10 new workers without work time and they are assigned to 10 cards. Also you are assigned to the TER2.  
 You can change your terminal, login and password in "Constant.py" file in ServerPckg and ClientPckg folders.  
@@ -48,6 +49,8 @@ Program's main role is to count a work time of every worker who have used the rf
 6. Download project's *aclfile.conf* and *mosquitto.conf* files and place/replace them into your mosquitto broker directory (you may need to change path in the *mosquitto.conf* file).
 
 7. Start/Restart the *Mosquitto Broker* service (you can do so in *services.msc* app in Windows).
+
+8. Download project's *Program* directory.
 
 ## Code examples
 `2`  
