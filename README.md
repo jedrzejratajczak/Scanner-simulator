@@ -28,8 +28,8 @@ Program's main role is to count a work time of every worker who have used the rf
 * Mosquitto MQTT Broker
 
 ## Setup
-First thing, you'll need to download [Mosquitto](https://mosquitto.org/download/) broker to your PC.  
-After installation we will need to generate authentication keys. To do so proceed to cmd, change directory to one where you would like to have keys and use following commands (you don't need to type in anything more beside of pass phrases, just skip the rest with *enter* key):
+1. Download [Mosquitto](https://mosquitto.org/download/) broker to your PC.  
+2. Generate authentication keys. To do so proceed to cmd, change directory to the one where you would like to have keys and use following commands (you don't need to type in anything more beside of pass phrases, just skip the rest with *enter* key):
 - openssl genrsa -des3 -out ca.key 2048
 - openssl req -new -x509 -days 1826 -key ca.key -out ca.crt
 - openssl genrsa -out server.key 2048
