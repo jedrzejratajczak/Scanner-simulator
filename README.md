@@ -20,7 +20,7 @@ You can change your terminal, login and password in "Constant.py" file in Server
 Program's main role is to count a work time of every worker who have used the rfid card to enter and exit.
 
 ## Screenshots
-![Example screenshot](./img/example.PNG)
+![Example screenshot](./example.PNG)
 
 ## Technologies
 * Python 3
