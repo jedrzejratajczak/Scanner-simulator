@@ -39,6 +39,14 @@ Program's main role is to count a work time of every worker who have used the rf
 
 3. In mosquitto broker directory create new directory named *certs* and copy there generated *ca.crt*, *server.crt* and *server.key* files.
 
+4. Download project's *ClientPckg* and *ServerPckg* directories and copy generated *ca.crt* file into both directories.
+
+5. Add client and server users and passwords:
+   * mosquitto_passwd -c "c:\Program Files\mosquitto\passwd.conf" server
+   * mosquitto_passwd -b "c:\Program Files\mosquitto\passwd.conf" client
+
+6. Download project's *mosquitto.conf* file and place/replace it in your mosquitto broker directory.
+
 ## Code examples
 `2`  
 `CARD2`  
