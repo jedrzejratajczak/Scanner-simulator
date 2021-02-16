@@ -72,4 +72,4 @@ Client and Server now need cert files to connect to broker. Client and Server ha
 - v. 1 - Initial project
 
 ## Contact
-Created by **Jędrzej Ratajczak** ([@mrozelek](https://github.com/Mrozelek)) - feel free to contact me!
+Created by **Jędrzej Ratajczak** ([@nilphym](https://github.com/nilphym)) - feel free to contact me!
