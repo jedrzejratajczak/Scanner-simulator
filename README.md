@@ -70,6 +70,3 @@ To-do list:
 Client and Server now need cert files to connect to broker. Client and Server have to use login and password.
 - v. 2 - Split project from one console, where client and server was, to use MQTT in several consoles (server and multiple terminals). Client's methods and method of doing backups hasn't been changed. Terminal's class has been deleted from server's database and moved as another solution. Moved project from Windows to Linux and fixed some compability issues.
 - v. 1 - Initial project
-
-## Contact
-Created by **Jędrzej Ratajczak** ([@nilphym](https://github.com/nilphym)) - feel free to contact me!
